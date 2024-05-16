@@ -125,7 +125,7 @@ root.geometry("600x400")  # Définit la taille de la fenêtre
 
 # Chargement et affichage du logo
 logo_image = Image.open("logo.png")
-logo_image = logo_image.resize((64, 50), Image.Resampling.LANCZOS)
+logo_image = logo_image.resize((50, 50), Image.Resampling.LANCZOS)
 logo_photo = ImageTk.PhotoImage(logo_image)
 logo_label = tk.Label(root, image=logo_photo)
 logo_label.pack(pady=10)  # Centré automatiquement
